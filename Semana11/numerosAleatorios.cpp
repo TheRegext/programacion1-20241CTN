@@ -10,7 +10,7 @@
 using namespace std;
 
 int tirarDado();
-void GenerarTirada(int v[], int tam);
+void generarTirada(int v[], int tam);
 void mostrarTirada(int v[], int tam);
 
 int main(){
@@ -23,7 +23,7 @@ int main(){
     int tirada[TAM];
 
     /// CARGAR TIRADA
-    GenerarTirada(tirada, TAM);
+    generarTirada(tirada, TAM);
 
     /// MOSTRAR TIRADA
     mostrarTirada(tirada, TAM);
@@ -35,7 +35,7 @@ int tirarDado(){
     return rand()% 6 + 1;
 }
 
-void GenerarTirada(int v[], int tam){
+void generarTirada(int v[], int tam){
     for (int i= 0; i < tam; i++){
         v[i] = tirarDado();
     }
